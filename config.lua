@@ -151,7 +151,13 @@ lvim.plugins = {
     cmd = "TroubleToggle",
   },
   { 'navarasu/onedark.nvim' },
-  { "akinsho/toggleterm.nvim" }
+  { "akinsho/toggleterm.nvim" },
+  {
+    "ur4ltz/surround.nvim",
+    config = function()
+      require "surround".setup { mappings_style = "surround" }
+    end
+  },
 }
 
 
