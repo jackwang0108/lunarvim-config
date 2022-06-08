@@ -158,6 +158,9 @@ lvim.plugins = {
       require "surround".setup { mappings_style = "surround" }
     end
   },
+  {
+    "lukas-reineke/indent-blankline.nvim"
+  }
 }
 
 
@@ -170,6 +173,8 @@ lvim.keys.normal_mode["<leader>tv"] = ":ToggleTerm direction=vertical<CR>"
 lvim.keys.normal_mode["<C-q>"] = ":BufferKill<CR>"
 lvim.keys.normal_mode["<C-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<C-h>"] = ":BufferLineCyclePrev<CR>"
+
+lvim.keys.normal_mode["<leader>rn"] = ":set relativenumber<CR>"
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- vim.api.nvim_create_autocmd("BufEnter", {
 --   pattern = { "*.json", "*.jsonc" },
